@@ -8,15 +8,20 @@ class SuperSummarizeAI < Formula
   depends_on "python@3.9" # Ensure Python 3 is installed
 
   def install
-    # Copy the entire project to the prefix (Homebrew's installation directory)
+    # Copy the entire project to the prefix
     prefix.install Dir["*"]
+
+    # Create a wrapper script for "ssai" command
+    (bin/"ssai").write <<~EOS
+      #!/bin/bash
+      python3 #{prefix}/ssai.py "$@"
+    EOS
 
     # Install Python dependencies
     system "pip3", "install", "-r", "#{prefix}/requirements.txt"
   end
 
   test do
-    # Basic execution test; you can enhance this as needed
-    system "python3", "#{prefix}/ssai.py", "--help" # Assuming --help is a valid parameter
+    system "#{bin}/ssai", "--help"
   end
 end
