@@ -1,7 +1,7 @@
 class Ssai < Formula
   desc "SuperSummarizeAI - A tool to summarize texts"
   homepage "https://github.com/alexandrevl/SuperSummarizeAI" 
-  url "https://github.com/alexandrevl/SuperSummarizeAI/archive/v1.0.0.tar.gz" 
+  url "https://github.com/alexandrevl/SuperSummarizeAI/archive/refs/tags/v1.0.1.tar.gz" 
   sha256 "08906c51cd2982d894b99ab1406127d611fff2128461829b6ca3f784518962ab"
   license "MIT"
 
