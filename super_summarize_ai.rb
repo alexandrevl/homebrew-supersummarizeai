@@ -1,4 +1,4 @@
-class Supersummarizeai < Formula
+class SuperSummarizeAi < Formula
   desc "SuperSummarizeAI - A tool to summarize texts"
   homepage "https://github.com/alexandrevl/SuperSummarizeAI" # Replace with your actual project's URL
   url "https://github.com/alexandrevl/SuperSummarizeAI/archive/refs/tags/v1.0.0.tar.gz" # Replace with the direct link to your tarball or zip
